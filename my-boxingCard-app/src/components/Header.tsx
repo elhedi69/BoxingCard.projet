@@ -1,4 +1,4 @@
-import alivstyson from "../images/TYSON VS ALI.png"
+import alivstyson from "../../public/images/TYSON VS ALI.png"
 
 export default function Header() {
 

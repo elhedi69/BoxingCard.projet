@@ -1,4 +1,4 @@
-import logonav from "../images/Logo boxing.png"
+import logonav from "../../public/images/Logo boxing.png"
 
 export default function NavBar() {
 
