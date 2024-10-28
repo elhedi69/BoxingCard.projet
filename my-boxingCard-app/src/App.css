@@ -10,18 +10,18 @@
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap : 1rem;
+  gap: 1rem;
   margin-right: 2%;
 }
 
@@ -31,7 +31,7 @@ nav ul {
 }
 
 #logonav {
-height: 90%;
+  height: 90%;
 }
 
 #alivstyson {
