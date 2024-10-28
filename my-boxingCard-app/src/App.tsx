@@ -37,7 +37,7 @@ const fightersList = [
   {
     id: 5,
     nom:"BERGER marc-antoine",
-    imgSrc:"",
+    imgSrc:"images/marco.png",
     poids:"100kg(de muscles)",
     taille:"200cm"
   },
