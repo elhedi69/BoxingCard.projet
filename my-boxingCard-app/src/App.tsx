@@ -15,20 +15,6 @@ const fightersList = [
     taille:"178cm"
   },
   {
-    id: 2,
-    nom:"ALI muhammad",
-    imgSrc:"images/ALI.png",
-    poids:"97kg",
-    taille:"191cm"
-  },
-  {
-    id: 3,
-    nom:"LEE bruce",
-    imgSrc:"images/LEE.png",
-    poids:"61kg",
-    taille:"172cm"
-  },
-  {
     id: 4,
     nom:"VAN DAMME jean-claude",
     imgSrc:"images/VAN-DAMME.png",
@@ -41,6 +27,22 @@ const fightersList = [
     imgSrc:"images/marco.png",
     poids:"100kg(de muscles)",
     taille:"200cm"
+  },
+]
+const fightersListred=[
+  {
+    id: 2,
+    nom:"ALI muhammad",
+    imgSrc:"images/ALI.png",
+    poids:"97kg",
+    taille:"191cm"
+  },
+  {
+    id: 3,
+    nom:"LEE bruce",
+    imgSrc:"images/LEE.png",
+    poids:"61kg",
+    taille:"172cm"
   },
   {
     id: 6,
@@ -57,9 +59,23 @@ function App() {
     <div className="document">
     <NavBar />
     <Header />
+    <section className="versus">
+    <div>
     {fightersList.map((fighter) =>(
       <MainCard data={fighter}/>
     ))}
+    </div>
+    <div>
+      <h1>VERSUS</h1>
+      <h1>VERSUS</h1>
+      <h1>VERSUS</h1>
+    </div>
+    <div>
+    {fightersListred.map((fighter) =>(
+      <MainCard data={fighter}/>
+    ))}
+    </div>
+    </section>
     <Footer/>
     </div>
   )

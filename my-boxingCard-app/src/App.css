@@ -53,3 +53,14 @@ footer {
   margin-right: 10px;
 }
 
+.versus{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.VERSUS{
+  display: flex;
+  justify-content: space-between;
+}
+
