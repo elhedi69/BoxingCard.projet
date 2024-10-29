@@ -1,8 +1,9 @@
-import { useState } from 'react'
+
 import NavBar from './components/NavBar'
 import './App.css'
 import Header from './components/Header';
 import MainCard from './components/MainCard';
+import Footer from './components/Footer';
 
 
 const fightersList = [
@@ -44,7 +45,7 @@ const fightersList = [
   {
     id: 6,
     nom:"LOPEZ matthieu",
-    imgSrc:"images/croissant.png",
+    imgSrc:"images/matthieu.png",
     poids:"100kg",
     taille:"195cm"
   },
@@ -59,6 +60,7 @@ function App() {
     {fightersList.map((fighter) =>(
       <MainCard data={fighter}/>
     ))}
+    <Footer/>
     </div>
   )
 }
