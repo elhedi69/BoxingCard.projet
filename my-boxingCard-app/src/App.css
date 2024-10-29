@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .document {
@@ -51,5 +52,39 @@ footer {
 #gants {
   height: 3rem;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
+.maincard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.carte {
+  background-image: url(../public/images/ring.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 4rem;
+  color: white;
+}
+
+.carte img {
+  height: 250px;
+  width: 200px;
+}
+
+.carte p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

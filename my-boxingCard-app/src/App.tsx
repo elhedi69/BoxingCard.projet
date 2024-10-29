@@ -1,69 +1,58 @@
-
-import NavBar from './components/NavBar'
-import './App.css'
-import Header from './components/Header';
-import MainCard from './components/MainCard';
-import Footer from './components/Footer';
-
+import "./App.css";
+import NavBar from "./components/NavBar";
+import Header from "./components/Header";
+import MainCard from "./components/MainCard";
+import Footer from "./components/Footer";
 
 const fightersList = [
   {
     id: 1,
-    nom:"TYSON mike",
-    imgSrc:"images/TYSON.png",
-    poids:"99kg",
-    taille:"178cm"
+    combattant1: "TYSON Mike",
+    imgSrc1: "images/TYSON.png",
+    poids1: "99kg",
+    taille1: "178cm",
+    combattant2: "ALI Muhammad",
+    imgSrc2: "images/ALI.png",
+    poids2: "97kg",
+    taille2: "191cm",
   },
   {
     id: 2,
-    nom:"ALI muhammad",
-    imgSrc:"images/ALI.png",
-    poids:"97kg",
-    taille:"191cm"
+    combattant1: "LEE Bruce",
+    imgSrc1: "images/LEE.png",
+    poids1: "61kg",
+    taille1: "172cm",
+    combattant2: "VAN DAMME Jean-claude",
+    imgSrc2: "images/VAN-DAMME.png",
+    poids2: "84kg",
+    taille2: "177cm",
   },
   {
     id: 3,
-    nom:"LEE bruce",
-    imgSrc:"images/LEE.png",
-    poids:"61kg",
-    taille:"172cm"
+    combattant1: "BERGER Marc-Antoine",
+    imgSrc1: "images/marco.png",
+    poids1: "100kg (de muscles)",
+    taille1: "200cm",
+    combattant2: "LOPEZ Matthieu",
+    imgSrc2: "images/matthieu.png",
+    poids2: "100kg",
+    taille2: "195cm",
   },
-  {
-    id: 4,
-    nom:"VAN DAMME jean-claude",
-    imgSrc:"images/VAN-DAMME.png",
-    poids:"84kg",
-    taille:"177cm"
-  },
-  {
-    id: 5,
-    nom:"BERGER marc-antoine",
-    imgSrc:"images/marco.png",
-    poids:"100kg(de muscles)",
-    taille:"200cm"
-  },
-  {
-    id: 6,
-    nom:"LOPEZ matthieu",
-    imgSrc:"images/matthieu.png",
-    poids:"100kg",
-    taille:"195cm"
-  },
-]
+];
 
 function App() {
-
   return (
     <div className="document">
-    <NavBar />
-    <Header />
-    {fightersList.map((fighter) =>(
-      <MainCard data={fighter}/>
-    ))}
-    <Footer/>
+      <NavBar />
+      <Header />
+      <div className="maincard">
+        {fightersList.map((fighter, index) => (
+          <MainCard key={index} data={fighter} />
+        ))}
+      </div>
+      <Footer />
     </div>
-  )
+  );
 }
-
 
 export default App;
